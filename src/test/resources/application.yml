@@ -1,0 +1,7 @@
+spring:
+  kafka:
+    bootstrap-servers: ${spring.embedded.kafka.brokers}
+    consumer:
+      group-id: quantum-red-shift
+      enable-auto-commit: false
+      auto-offset-reset: earliest
